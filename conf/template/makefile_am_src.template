@@ -1,0 +1,31 @@
+${HASH}" @info   ${GEN_CLIB_PRO_TOOL} ${GEN_CLIB_PRO_VERSION}"
+${HASH}" @author ${AUTHOR_NAME} ${AUTHOR_EMAIL}"
+${HASH}" @brief  Process this file with automake to produce Makefile.in."
+
+"AM_CPPFLAGS = ${BSLASH}"
+"${TAB}-DPACKAGE_LOCALE_DIR=${BSLASH}\\\"\\\"\\\$(localedir)\\\"${BSLASH}\\\" ${BSLASH}"
+"${TAB}-DPACKAGE_SRC_DIR=${BSLASH}\\\"\\\"\\\$(srcdir)\\\"${BSLASH}\\\" ${BSLASH}"
+"${TAB}-DPACKAGE_DATA_DIR=${BSLASH}\\\"\\\"\\\$(pkgdatadir)\\\"${BSLASH}\\\""
+
+"AM_CFLAGS = ${BSLASH}"
+"${TAB}-Wall ${BSLASH}"
+"${TAB}-g"
+
+"lib_LTLIBRARIES = lib${PNAME}.la"
+
+"lib${PNAME}_la_SOURCES = ${BSLASH}"
+${TAB}"lib.c"
+
+"lib${PNAME}_la_LDFLAGS = "
+
+"lib${PNAME}_la_LIBADD = "
+
+"include_HEADERS = ${BSLASH}"
+${TAB}"${PNAME}.h"
+
+"pkgconfigdir = \\\$(libdir)/pkgconfig"
+"pkgconfig_DATA = ${PNAME}-0.1.pc"
+
+"EXTRA_DIST = ${BSLASH}"
+${TAB}"${PNAME}-0.1.pc.in"
+

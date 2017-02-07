@@ -1,0 +1,18 @@
+${HASH}
+${HASH}" @info   $GEN_CLIB_PRO_TOOL $GEN_CLIB_PRO_VERSION"
+${HASH}" @author ${AUTHOR_NAME} ${AUTHOR_EMAIL}"
+${HASH}" @brief  Process this file in build stage"
+${HASH}
+"prefix=@prefix@"
+"exec_prefix=@exec_prefix@"
+"libdir=@libdir@"
+"datarootdir=@datarootdir@"
+"datadir=@datadir@"
+"includedir=@includedir@/lib${PNAME}-0.1"
+
+"Name: lib${PNAME}"
+"Description: Ansi C library."
+"Version: @VERSION@"
+"Requires: "
+"Libs: -L\\\${libdir} -l${PNAME}"
+"Cflags: -I\\\${includedir}"
