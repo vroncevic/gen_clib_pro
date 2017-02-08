@@ -176,7 +176,6 @@ function __gen_clib_pro() {
 		do
 			eval echo "${HCL}" >> ${HCF}
 		done < ${HCTF}
-
 		local PCF="${SRC}/${PNAME}-0.1.pc.in" PCL PCT=${project_set[PCIN]}
 		local PCTF="${GEN_CLIB_PRO_HOME}/conf/${PCT}"
 		MSG="Generating file [${PCF}]"
@@ -185,8 +184,6 @@ function __gen_clib_pro() {
 		do
 			eval echo "${PCL}" >> ${PCF}
 		done < ${PCTF}
-
-
 		local MSF="${SRC}/Makefile.am" MST=${project_set[MAKEFILE_AMS]}
 		local MSTF="${GEN_CLIB_PRO_HOME}/conf/${MST}" MSL
 		MSG="Generating file [${MSF}]"
