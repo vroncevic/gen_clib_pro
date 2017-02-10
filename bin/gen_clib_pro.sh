@@ -176,6 +176,12 @@ function __gen_clib_pro() {
 		do
 			eval echo "${HCL}" >> ${HCF}
 		done < ${HCTF}
+		local CET=${project_set[C_EDIT]}
+		local CETF=$(cat "${GEN_CLIB_PRO_HOME}/conf/${CET}")
+		local CEF="${SRC}/.editorconfig"
+		MSG="Generating file [${CEF}]"
+		__info_debug_message "$MSG" "$FUNC" "$GEN_CLIB_PRO_TOOL"
+		echo -e "${CETF}" > "${CEF}"
 		local PCF="${SRC}/${PN}-0.1.pc.in" PCL PCT=${project_set[PCIN]}
 		local PCTF="${GEN_CLIB_PRO_HOME}/conf/${PCT}"
 		MSG="Generating file [${PCF}]"
@@ -223,7 +229,7 @@ function __gen_clib_pro() {
 			eval echo "${NL}" >> ${NF}
 		done < ${NTF}
 		local RT=${project_set[README]} RF="${PDIR}/README" RL
-		local RMSG="${HASH} Readme section"
+		local RMSG="${H} Readme section"
 		local RTF="${GEN_CLIB_PRO_HOME}/conf/${RT}"
 		MSG="Generating file [${RF}]"
 		__info_debug_message "$MSG" "$FUNC" "$GEN_CLIB_PRO_TOOL"
@@ -238,6 +244,9 @@ function __gen_clib_pro() {
 		__info_debug_message "$MSG" "$FUNC" "$GEN_CLIB_PRO_TOOL"
 		__info_debug_message "$MSG" "$FUNC" "$GEN_CLIB_PRO_TOOL"
 		eval "chmod -R 755 ${PDIR}/"
+		MSG="Generated C project ${PDIR}/"
+		GEN_CLIB_PRO_LOGGING[LOG_MSGE]=$MSG
+		__logging GEN_CLIB_PRO_LOGGING
 		__info_debug_message_end "Done" "$FUNC" "$GEN_CLIB_PRO_TOOL"
 		TREE=$(which tree)
 		__check_tool "${TREE}"

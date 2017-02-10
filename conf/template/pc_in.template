@@ -1,6 +1,6 @@
 ${H}
 ${H}" @info   $GEN_CLIB_PRO_TOOL $GEN_CLIB_PRO_VERSION"
-${H}" @author ${AN} ${AE}"
+${H}" @author ${AN} <${AE}>"
 ${H}" @brief  Process this file in build stage"
 ${H}
 "prefix=@prefix@"
