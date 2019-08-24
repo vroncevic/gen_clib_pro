@@ -1,4 +1,4 @@
-# Generate C Library Project (Bash script).
+# Generate C Library Project.
 
 The README is used to introduce the modules and provide instructions on
 how to install the modules, any machine dependencies it may have and any
