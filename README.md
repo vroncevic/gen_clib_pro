@@ -1,8 +1,8 @@
 # Generate C Library Project.
 
-gen_clib_pro is shell tool for generating C library project.
+***gen_clib_pro*** is shell tool for generating C library project.
 
-Developed in bash code: 100%.
+Developed in bash code: ***100%***.
 
 The README is used to introduce the modules and provide instructions on
 how to install the modules, any machine dependencies it may have and any
@@ -10,6 +10,17 @@ other information that should be provided before the modules are installed.
 
 [![GitHub issues open](https://img.shields.io/github/issues/vroncevic/gen_clib_pro.svg)](https://github.com/vroncevic/gen_clib_pro/issues)
  [![GitHub contributors](https://img.shields.io/github/contributors/vroncevic/gen_clib_pro.svg)](https://github.com/vroncevic/gen_clib_pro/graphs/contributors)
+
+<!-- START doctoc -->
+**Table of Contents**
+
+- [Installation](https://github.com/vroncevic/gen_clib_pro#installation)
+- [Usage](https://github.com/vroncevic/gen_clib_pro#usage)
+- [Dependencies](https://github.com/vroncevic/gen_clib_pro#dependencies)
+- [Shell tool structure](https://github.com/vroncevic/gen_clib_pro#shell-tool-structure)
+- [Docs](https://github.com/vroncevic/gen_clib_pro#docs)
+- [Copyright and Licence](https://github.com/vroncevic/gen_clib_pro#copyright-and-licence)
+<!-- END doctoc -->
 
 ### INSTALLATION
 
@@ -25,9 +36,9 @@ cp -R ~/sh_tool/conf/  /root/scripts/gen_clib_pro/ver.1.0/
 cp -R ~/sh_tool/log/   /root/scripts/gen_clib_pro/ver.1.0/
 ```
 
-Or You can use docker to create image/container.
+![alt tag](https://raw.githubusercontent.com/vroncevic/gen_clib_pro/dev/docs/setup_tree.png)
 
-:sparkles:
+Or You can use docker to create image/container.
 
 ### USAGE
 
@@ -50,18 +61,18 @@ This module requires these other modules and libraries:
 
 ### SHELL TOOL STRUCTURE
 
-gen_clib_pro is based on MOP.
+***gen_clib_pro*** is based on MOP.
 
 Shell tool structure:
 ```
 .
-├── bin
+├── bin/
 │   └── gen_clib_pro.sh
-├── conf
+├── conf/
 │   ├── gen_clib_pro.cfg
 │   ├── gen_clib_pro_util.cfg
 │   ├── project_set.cfg
-│   └── template
+│   └── template/
 │       ├── authors.template
 │       ├── autogen.template
 │       ├── c_editorconfig.template
@@ -75,7 +86,7 @@ Shell tool structure:
 │       ├── news.template
 │       ├── pc_in.template
 │       └── readme.template
-└── log
+└── log/
     └── gen_clib_pro.log
 ```
 
@@ -87,8 +98,6 @@ More documentation and info at:
 
 * https://gen_clib_pro.readthedocs.io/en/latest/
 
-:sparkles:
-
 ### COPYRIGHT AND LICENCE
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
@@ -98,6 +107,4 @@ Copyright (C) 2018 by https://vroncevic.github.io/gen_clib_pro
 This tool is free software; you can redistribute it and/or modify
 it under the same terms as Bash itself, either Bash version 4.2.47 or,
 at your option, any later version of Bash 4 you may have available.
-
-:sparkles:
 
