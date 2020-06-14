@@ -22,6 +22,8 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends \
  unzip \
  ca-certificates \
  openssl \
+ autoconf \
+ autogen \
  build-essential
 
 RUN wget https://github.com/vroncevic/sh_util/archive/v1.0.0.zip
