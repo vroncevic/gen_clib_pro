@@ -1,6 +1,6 @@
-<img align="right" src="https://raw.githubusercontent.com/vroncevic/gen_clib_pro/dev/docs/gen_clib_pro_logo.png" width="25%">
-
 # Generate C Library Project
+
+<img align="right" src="https://raw.githubusercontent.com/vroncevic/gen_clib_pro/dev/docs/gen_clib_pro_logo.png" width="25%">
 
 **gen_clib_pro** is shell tool for generating C library project.
 
@@ -35,7 +35,7 @@ Navigate to release **[page](https://github.com/vroncevic/gen_clib_pro/releases)
 
 To install **gen_clib_pro** type the following
 
-```
+```bash
 tar xvzf gen_clib_pro-x.y.tar.gz
 cd gen_clib_pro-x.y
 cp -R ~/sh_tool/bin/   /root/scripts/gen_clib_pro/ver.x.y/
@@ -44,7 +44,8 @@ cp -R ~/sh_tool/log/   /root/scripts/gen_clib_pro/ver.x.y/
 ```
 
 Self generated setup script and execution
-```
+
+```bash
 ./gen_clib_pro_setup.sh
 
 [setup] installing App/Tool/Script gen_clib_pro
@@ -90,7 +91,7 @@ Or You can use docker to create image/container.
 
 ### Usage
 
-```
+```bash
 # Create symlink for shell tool
 ln -s /root/scripts/gen_clib_pro/ver.x.y/bin/gen_clib_pro.sh /root/bin/gen_clib_pro
 
@@ -204,7 +205,8 @@ Sun 05 Dec 2021 03:29:19 PM CET
 **gen_clib_pro** is based on MOP.
 
 Shell tool structure
-```
+
+```bash
 sh_tool/
 ├── bin/
 │   ├── center.sh
