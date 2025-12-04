@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # @brief   Generete C Library Project
-# @version ver.2.0
+# @version ver.3.0
 # @date    Sun 05 Dec 2021 03:06:47 PM CET
 # @company None, free software to use 2021
 # @author  Vladimir Roncevic <elektron.ronca@gmail.com>
@@ -21,7 +21,7 @@ UTIL_LOG=${UTIL}/log
 .    ${UTIL}/bin/progress_bar.sh
 
 GEN_CLIB_PRO_TOOL=gen_clib_pro
-GEN_CLIB_PRO_VERSION=ver.2.0
+GEN_CLIB_PRO_VERSION=ver.3.0
 GEN_CLIB_PRO_HOME=${UTIL_ROOT}/${GEN_CLIB_PRO_TOOL}/${GEN_CLIB_PRO_VERSION}
 GEN_CLIB_PRO_CFG=${GEN_CLIB_PRO_HOME}/conf/${GEN_CLIB_PRO_TOOL}.cfg
 GEN_CLIB_PRO_UTIL_CFG=${GEN_CLIB_PRO_HOME}/conf/${GEN_CLIB_PRO_TOOL}_util.cfg

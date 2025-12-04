@@ -1,6 +1,6 @@
 #!/bin/sh
 # @brief          Run this to generate all the initial makefiles, etc.
-# @version        ver.2.0
+# @version        ver.3.0
 # @date           Sun 05 Dec 2021 03:06:47 PM CET
 # @company        None, free software to use 2021
 # @author-editor  Vladimir Roncevic <elektron.ronca@gmail.com>
