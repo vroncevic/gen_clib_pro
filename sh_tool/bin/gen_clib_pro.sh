@@ -19,6 +19,7 @@ UTIL_LOG=${UTIL}/log
 .    ${UTIL}/bin/load_conf.sh
 .    ${UTIL}/bin/load_util_conf.sh
 .    ${UTIL}/bin/progress_bar.sh
+.    ${UTIL}/bin/display_logo.sh
 
 GEN_CLIB_PRO_TOOL=gen_clib_pro
 GEN_CLIB_PRO_VERSION=ver.3.0
@@ -27,12 +28,6 @@ GEN_CLIB_PRO_CFG=${GEN_CLIB_PRO_HOME}/conf/${GEN_CLIB_PRO_TOOL}.cfg
 GEN_CLIB_PRO_UTIL_CFG=${GEN_CLIB_PRO_HOME}/conf/${GEN_CLIB_PRO_TOOL}_util.cfg
 GEN_CLIB_PRO_LOGO=${GEN_CLIB_PRO_HOME}/conf/${GEN_CLIB_PRO_TOOL}.logo
 GEN_CLIB_PRO_LOG=${GEN_CLIB_PRO_HOME}/log
-
-tabs 4
-CONSOLE_WIDTH=$(stty size | awk '{print $2}')
-
-.    ${GEN_CLIB_PRO_HOME}/bin/center.sh
-.    ${GEN_CLIB_PRO_HOME}/bin/display_logo.sh
 
 declare -A GEN_CLIB_PRO_USAGE=(
     [USAGE_TOOL]="${GEN_CLIB_PRO_TOOL}"
