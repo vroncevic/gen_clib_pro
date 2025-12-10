@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # @brief   Generete C Library Project
-# @version ver.3.0
+# @version ver.4.0
 # @date    Sun 05 Dec 2021 03:06:47 PM CET
 # @company None, free software to use 2021
 # @author  Vladimir Roncevic <elektron.ronca@gmail.com>
@@ -11,8 +11,6 @@ UTIL_VERSION=ver.1.0
 UTIL=${UTIL_ROOT}/sh_util/${UTIL_VERSION}
 UTIL_LOG=${UTIL}/log
 
-.    ${UTIL}/bin/devel.sh
-.    ${UTIL}/bin/usage.sh
 .    ${UTIL}/bin/check_root.sh
 .    ${UTIL}/bin/check_tool.sh
 .    ${UTIL}/bin/logging.sh
@@ -22,7 +20,7 @@ UTIL_LOG=${UTIL}/log
 .    ${UTIL}/bin/display_logo.sh
 
 GEN_CLIB_PRO_TOOL=gen_clib_pro
-GEN_CLIB_PRO_VERSION=ver.3.0
+GEN_CLIB_PRO_VERSION=ver.4.0
 GEN_CLIB_PRO_HOME=${UTIL_ROOT}/${GEN_CLIB_PRO_TOOL}/${GEN_CLIB_PRO_VERSION}
 GEN_CLIB_PRO_CFG=${GEN_CLIB_PRO_HOME}/conf/${GEN_CLIB_PRO_TOOL}.cfg
 GEN_CLIB_PRO_UTIL_CFG=${GEN_CLIB_PRO_HOME}/conf/${GEN_CLIB_PRO_TOOL}_util.cfg
@@ -49,6 +47,13 @@ declare -A PB_STRUCTURE=(
     [SLEEP]=0.01
 )
 
+declare -A GEN_CLIB_PRO_LOGO_DATA=(
+    [OWNER]="vroncevic"
+    [REPO]="${GEN_CLIB_PRO_TOOL}"
+    [VERSION]="${GEN_CLIB_PRO_VERSION}"
+    [LOGO]="${GEN_CLIB_PRO_LOGO}"
+)
+
 TOOL_DBG="false"
 TOOL_LOG="false"
 TOOL_NOTIFY="false"
@@ -70,8 +75,8 @@ TOOL_NOTIFY="false"
 #
 function __gen_clib_pro {
     local PN=$1
-    display_logo
     if [ -n "${PN}" ]; then
+        display_logo GEN_CLIB_PRO_LOGO_DATA
         local FUNC=${FUNCNAME[0]} MSG="None"
         local STATUS_CONF STATUS_CONF_UTIL STATUS
         MSG="Loading basic and util configuration!"
